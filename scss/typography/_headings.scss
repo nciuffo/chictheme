@@ -1,3 +1,42 @@
-.site-title {
-  font-family: sans-serif;
+.mainIntroductionHeader {
+  font-family: $headerFont;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.125;
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+.mainIntroductionParagraph {
+  font-family: $bodyFont;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.75;
+  font-size: 1.3em;
+}
+.gradentBlueGreen {
+  background: -webkit-linear-gradient(top left, #33a4b2, #2c5c82);
+	background: linear-gradient(top left, #33a4b2, #2c5c82);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.socialIcon {
+  font-size: 1em;
+  color: #111111;
+
+  &hover,
+  &focus {
+    color: $darkSlateBlue;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 768px){
+  .mainIntroductionHeader {
+    font-size: 3em;
+  }
+}
+@media (max-width: 506px){
+  .mainIntroductionHeader {
+    font-size: 1.65em;
+  }
 }
